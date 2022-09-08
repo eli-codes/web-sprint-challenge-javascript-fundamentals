@@ -17,7 +17,7 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/** We can access the internal variable because it is defined in the parent function scope. We cannot go down and access our internal function. */
 
 
 
@@ -30,9 +30,12 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let counter = 0
+  for(let i = 0; i <= num; i++){
+    counter =  counter + i;
+  }
+return counter;
   }
  
 
